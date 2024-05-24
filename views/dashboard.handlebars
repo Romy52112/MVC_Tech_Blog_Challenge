@@ -3,7 +3,8 @@
 {{#each posts}}
   <div class="post">
     <h2><a href="/dashboard/edit/{{this.id}}">{{this.title}}</a></h2>
-    <p>by {{this.user.username}} on {{this.createdAt}}</p>
+    <p>Posted by: {{this.user.username}} </p>
+    <p>on {{this.createdAt}}</p>
     <p>{{this.content}}</p>
   </div>
 {{/each}}

@@ -19,4 +19,4 @@ const newPostFormHandler = async (event) => {
     }
   };
   
-  document.querySelector('#new-post-form').addEventListener('submit', newPostFormHandler);
+  document.querySelector('#submitComment').addEventListener('submit', newPostFormHandler);
