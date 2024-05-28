@@ -12,17 +12,14 @@
       <a href="/" id="homeBar">Home</a>
       {{#if loggedIn}}
         <a href="/dashboard" id="dashboardBar">Dashboard</a>
-        <a id="logoutBar" >Logout</a>
+        <a id="logout" >Logout</a>
       {{else}}
-        <a href="/login">Login</a>
-        <a href="/signup">Sign Up</a>
+        <a id="login"  href="/login">Login</a>
+        <a id="signup"  href="/signup">Sign Up</a>
       {{/if}}
     </nav>
   </header>
   {{{body}}}
-  
   <script src="/js/logout.js"></script>
-  
-  
 </body>
 </html>

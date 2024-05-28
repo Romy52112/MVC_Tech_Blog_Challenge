@@ -11,12 +11,12 @@ body{
     background-color:#f77e38;
     color:#480199;
 }
-#homeBar, #dashboardBar {
+#homeBar, #dashboardBar, #login, #signup {
     padding: 30px;
     font-size: 30px;
     text-decoration: none;
 }
-#logoutBar{
+#logout{
     padding: 30px;
     font-size: 30px;
     text-decoration: none;
@@ -80,3 +80,118 @@ body{
 #comment-form button:hover {
     background-color: #0056b3;
 }
+
+/* css for login and signup */
+#login-container, .signup-container{
+    margin: 0 auto;
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+#login-form, #signup-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #login-form h1, #signup-form h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  #login-form input[type="text"],
+  #login-form input[type="password"],
+  #signup-form input[type="text"],
+  #signup-form input[type="password"]  {
+    width: 90%;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    border: 1px solid #fc9b9b8c;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  #login-form input[type="text"]:focus,
+  #login-form input[type="password"]:focus,
+  #signup-form input[type="text"]:focus,
+  #signup-form input[type="password"]:focus {
+    border-color: #ff8800;
+    outline: none;
+  }
+  
+  #login-form button, #signup-form button {
+    padding: 12px 20px;
+    background-color: #ff8800;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #login-form button:hover, #signup-form button:hover {
+    background-color: #fab15d;
+  }
+
+/* css for dashboard */
+#dashboard-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Create New Post link */
+  #dashboard-container a {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #dashboard-container a:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Individual post container */
+  .post {
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .post:last-child {
+    border-bottom: none;
+  }
+  
+  .post h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #007bff;
+  }
+  
+  .post h2 a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+  }
+  
+  .post h2 a:hover {
+    color: #0056b3;
+  }
+  
+  .post p {
+    margin: 10px 0;
+    color: #666;
+  }
+  
+  
