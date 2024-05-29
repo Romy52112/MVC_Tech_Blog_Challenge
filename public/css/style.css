@@ -82,7 +82,7 @@ body{
 }
 
 /* css for login and signup */
-#login-container, .signup-container{
+#login-container, .signup-container, #new-post-form, #edit-post-form    {
     margin: 0 auto;
     margin-top: 50px;
     background-color: #fff;
@@ -210,3 +210,44 @@ body{
     color: #666;
   }
    
+  /* css for create new post */
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  input[type="text"]:focus,
+  textarea:focus {
+    border-color: #ff8800;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff8800;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #fab15d;
+  }
+  /* css for delete button */
+  #delete-post{
+    margin-top: 10px;
+  }

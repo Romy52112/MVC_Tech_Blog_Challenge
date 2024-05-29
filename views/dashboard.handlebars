@@ -1,12 +1,15 @@
 <div id="dashboard-container">
 <h1>Your Dashboard</h1>
 <a href="/dashboard/new" id="create">Create New Post</a>
+<div id="posts-container">
 {{#each posts}}
   <div class="post">
     <h2><a href="/dashboard/edit/{{this.id}}">{{this.title}}</a></h2>
-    <p>by {{this.user.username}} on {{this.createdAt}}</p>
+    <p>Posted by: {{this.user.username}}</p>
+    <p>on {{this.createdAt}}</p>
     <p>{{this.content}}</p>
   </div>
 {{/each}}
+</div>
 </div>
 
