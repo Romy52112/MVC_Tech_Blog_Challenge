@@ -122,6 +122,7 @@ header {
 }
 
 #login-form button, #signup-form button {
+  width:98%;
   padding: 12px 20px;
   background-color: #ff8800;
   border: none;
@@ -213,7 +214,7 @@ h1 {
 
 input[type="text"],
 textarea {
-  width: 100%;
+  width: 95%;
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid #ddd;
@@ -246,6 +247,7 @@ button:hover {
 #delete-post {
   margin-top: 10px;
 }
+
 
 /* Media queries */
 @media (max-width: 768px) {
