@@ -1,253 +1,332 @@
-body{
-    margin:0;
-}
-/* main handlebars css */
-#navbar{
-    display:flex;
-    flex-direction:row;
-    width:100%;
-    height:100px;
-    align-items:center;
-    background-color:#f77e38;
-    color:#480199;
-}
-#homeBar, #dashboardBar, #login, #signup {
-    padding: 30px;
-    font-size: 30px;
-    text-decoration: none;
-}
-#logout{
-    padding: 30px;
-    font-size: 30px;
-    text-decoration: none;
-    cursor: pointer;
+body {
+  margin: 0;
 }
 
-#homepageTitle{
-    padding: 30px;
-    font-size: 30px;
-    justify-content: center;
-    text-align: center;
+/* Base styles */
+header {
+  background-color: #f77e38;
 }
 
-#homepageContent{
-    padding: 30px;
-    font-size: 30px;
-    justify-content: center;
-    text-align: center;
-}
-/* homepage handlebars css  */
-#postTitle{
-    text-decoration: none;
-    color: #f77e38;
-}
-.post{
-    margin-left: 15px;
+#navbar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  background-color: #f77e38;
+  color: #480199;
 }
 
-/* post handlebars css */
- 
-#commentContainer{
-    margin: 20px;
+#homeBar, #dashboardBar, #login, #signup, #logout {
+  padding: 30px;
+  font-size: 30px;
+  text-decoration: none;
+  cursor: pointer;
 }
-#commentTitle{
-    color: #f77e38;
+
+#homepageTitle, #homepageContent {
+  padding: 30px;
+  font-size: 30px;
+  justify-content: center;
+  text-align: center;
 }
-.comment{
-    margin-top: 20px;
+
+#postTitle {
+  text-decoration: none;
+  color: #f77e38;
 }
-  
+
+.post {
+  margin-left: 15px;
+}
+
+/* Comment form styles */
+#commentContainer {
+  margin: 20px;
+}
+
+#commentTitle {
+  color: #f77e38;
+}
+
+.comment {
+  margin-top: 20px;
+}
+
 #comment-form textarea {
-    width: 80%;
-    height: 80px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    resize: vertical;
-    margin: 10px;
+  width: 80%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: vertical;
+  margin: 10px;
 }
-  
+
 #comment-form button {
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #ff8800;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #ff8800;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
 }
-  
+
 #comment-form button:hover {
-    background-color: #0056b3;
+  background-color: #fab15d;
 }
 
-/* css for login and signup */
-#login-container, .signup-container, #new-post-form, #edit-post-form    {
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: #fff;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    width: 90%;
-    max-width: 400px;
-    text-align: center;
+/* Login and signup form styles */
+#login-container, .signup-container, #new-post-form, #edit-post-form {
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
 }
+
 #login-form, #signup-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  #login-form h1, #signup-form h1 {
-    margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-  }
-  
-  #login-form input[type="text"],
-  #login-form input[type="password"],
-  #signup-form input[type="text"],
-  #signup-form input[type="password"]  {
-    width: 90%;
-    padding: 12px 15px;
-    margin-bottom: 15px;
-    border: 1px solid #fc9b9b8c;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  #login-form input[type="text"]:focus,
-  #login-form input[type="password"]:focus,
-  #signup-form input[type="text"]:focus,
-  #signup-form input[type="password"]:focus {
-    border-color: #ff8800;
-    outline: none;
-  }
-  
-  #login-form button, #signup-form button {
-    padding: 12px 20px;
-    background-color: #ff8800;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  #login-form button:hover, #signup-form button:hover {
-    background-color: #fab15d;
+  display: flex;
+  flex-direction: column;
+}
+
+#login-form h1, #signup-form h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+#login-form input[type="text"],
+#login-form input[type="password"],
+#signup-form input[type="text"],
+#signup-form input[type="password"] {
+  width: 90%;
+  padding: 12px 15px;
+  margin-bottom: 15px;
+  border: 1px solid #fc9b9b8c;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus,
+#signup-form input[type="text"]:focus,
+#signup-form input[type="password"]:focus {
+  border-color: #ff8800;
+  outline: none;
+}
+
+#login-form button, #signup-form button {
+  padding: 12px 20px;
+  background-color: #ff8800;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#login-form button:hover, #signup-form button:hover {
+  background-color: #fab15d;
+}
+
+/* Dashboard styles */
+#dashboard-container h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#dashboard-container a {
+  display: block;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #ff8800;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#dashboard-container a:hover {
+  background-color: #fab15d;
+}
+
+#create {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  text-align: center;
+}
+
+.post {
+  padding: 20px;
+  border-bottom: 5px solid #ddd;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.post:last-child {
+  border-bottom: none;
+}
+
+.post h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #ff8800;
+}
+
+.post h2 a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.post h2 a:hover {
+  color: #ff8800;
+}
+
+.post p {
+  margin: 10px 10px;
+  color: #666;
+}
+
+/* Create new post styles */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-color: #ff8800;
+  outline: none;
+}
+
+button {
+  width: 81%;
+  padding: 10px;
+  background-color: #ff8800;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #fab15d;
+}
+
+/* Delete button styles */
+#delete-post {
+  margin-top: 10px;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  #navbar {
+      flex-direction: column;
+      height: auto;
   }
 
-/* css for dashboard */
-#dashboard-container h1 {
-    text-align: center;
-    color: #333;
-    margin-bottom: 20px;
+  #homeBar, #dashboardBar, #login, #signup, #logout {
+      padding: 15px;
+      font-size: 20px;
   }
-  
-  /* Create New Post link */
-  #dashboard-container a {
-    display: block;
-    text-align: center;
-    margin-bottom: 20px;
-    padding: 10px 20px;
-    background-color: #ff8800;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    /* transition: background-color 0.3s ease; */
+
+  #homepageTitle, #homepageContent {
+      font-size: 20px;
+      padding: 15px;
   }
-  
-  #dashboard-container a:hover {
-    background-color: #fab15d;
+
+  #comment-form textarea {
+      width: 90%;
   }
-  #create{
-    width: 30%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    margin-top: 50px;
-    background-color: #fff;
-    padding: 40px 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    max-width: 400px;
-    text-align: center;
-    
+
+  #login-container, .signup-container, #new-post-form, #edit-post-form {
+      width: 85%;
+      /* max-width: none; */
+      padding: 20px;
   }
-  
-  /* Individual post container */
-   .post {
-    padding: 20px;
-    border-bottom: 5px solid #ddd;
-    width: 90%;
-    margin: 0 auto;
+
+  #create {
+      width: 90%;
+      padding: 20px;
   }
-  
-  .post:last-child {
-    border-bottom: none;
+
+  .post {
+      width: 95%;
   }
-  
+
   .post h2 {
-    margin: 0;
-    font-size: 24px;
-    color: #ff8800;
+      font-size: 20px;
   }
-  
-  .post h2 a {
-    text-decoration: none;
-    color: inherit;
-    transition: color 0.3s ease;
+  button{
+  width: 93%;
+}
+input[type="text"],
+textarea {
+  width: 90%;
+}
+}
+
+@media (max-width: 480px) {
+  #homeBar, #dashboardBar, #login, #signup, #logout {
+      padding: 10px;
+      font-size: 18px;
   }
-  
-  .post h2 a:hover {
-    color: #ff8800;
+
+  #homepageTitle, #homepageContent {
+      font-size: 18px;
+      padding: 10px;
   }
-  
-  .post p {
-    margin: 10px 0;
-    color: #666;
+
+  #login-container, .signup-container, #new-post-form, #edit-post-form {
+      padding: 15px;
   }
-   
-  /* css for create new post */
-  h1 {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+
+  #create {
+      width: 50%;
+      padding: 15px;
   }
-  
-  input[type="text"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+
+  .post {
+      width: 100%;
   }
-  
-  input[type="text"]:focus,
-  textarea:focus {
-    border-color: #ff8800;
-    outline: none;
+
+  .post h2 {
+      font-size: 18px;
+      width: 90%;
   }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #ff8800;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+}
+
+@media (min-width: 344px) {
+  .post p{
+    font-size: 14px;
   }
-  
-  button:hover {
-    background-color: #fab15d;
-  }
-  /* css for delete button */
-  #delete-post{
-    margin-top: 10px;
-  }
+}
