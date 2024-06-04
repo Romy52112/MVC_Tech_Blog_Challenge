@@ -7,7 +7,7 @@
 <h2 id="commentTitle">Comments</h2>
 {{#each post.comments}}
   <div class="comment">
-    <p>Posted by:{{this.user.username}} on {{this.createdAt}}</p>
+    <p>Posted by:{{this.user.username}} on {{format_date this.createdAt}}</p>
     <p>{{this.comment_text}}</p>
   </div>
 {{/each}}

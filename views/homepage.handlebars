@@ -3,7 +3,7 @@
   <div class="post">
     <h2><a href="/post/{{this.id}}" id="postTitle" >{{this.title}}</a></h2>
     <p>Posted by: {{this.user.username}} </p>
-    <p>on {{this.createdAt}}</p>
+    <p>on {{format_date this.createdAt}}</p>
     <p>{{this.content}}</p>
   </div>
 {{/each}}
