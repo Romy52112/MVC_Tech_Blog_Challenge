@@ -15,8 +15,9 @@
   * [Questions](#questions)
   ## Installation
   npm start
-  ## How to Use This Application:
-  none
+  ## Heroku Deployed Application
+  https://mvc-tech-chalenge-eacbb274e204.herokuapp.com/
+
   ## Contributors
   contributions are welcome
   ## Testing
